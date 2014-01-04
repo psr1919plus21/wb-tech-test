@@ -31,15 +31,17 @@ body{
 		width: 32px;
 		height: 32px;
 		transition: .5s;
-	}
-	li:hover{
 		
+		&:hover {
 		padding-left: 3px;
 		transition: .25s;
 		box-shadow: 2px 0 15px 1px black;
 		
 		
+		}
+		
 	}
+	
 	a{	
 		padding: 2px;
 	}
@@ -85,15 +87,85 @@ body{
 
 /* Вопрос */
 
-#vopros{
-	position: fixed;
-	right: 20px;
-	top: 20px;
-	width: 60px;
-	opacity: .8;
-	}&: hover{
-		right: 200px;
+	#vopros{
+		position: fixed;
+		right: 20px;
+		top: 20px;
+		width: 60px;
+		opacity: .8;	
+		&:hover{ opacity: 1;
+		}
 	}
+	
+	
+		
+
+/*      Container     */
+
+
+#container{
+	background: #fff;
+	margin: 0 10% 5% 10%;
+	width: 80%;
+	
+}
+
+
+/* login */
+
+
+#login_reg{
+	text-align: right;
+	margin-right:  15px;
+	padding-top: 10px;
+	
+	a{
+		font-family: 'Calibri', sans-serif;
+		font-weight: bold;
+		text-decoration: none;
+		color: #33a;
+		&:hover{
+			color: #000;
+		}
+	
+	}
+	
+	#sign-in{
+		background: url("../img/black-man.png");
+		background-position: left center;
+		background-repeat: no-repeat;
+		
+		padding: 5px 8px 5px 30px;
+		
+		
+	}
+	
+	#reg{
+	border-left: 2px solid black;
+	padding-left: 10px;
+	
+	}
+}
+
+
+/* main logo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
