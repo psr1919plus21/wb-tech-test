@@ -27,10 +27,24 @@
 
 <header>
 	<div id="login_reg">
-		<a  id="sign-in" href="#" >Sign-in</a>
+		<a  id="sign-in" href="#openModal" >Sign-in</a>
+		
 		<a  id="reg" href="#">Register</a>
 	</div>
+	
+	<div id="openModal" class="modalDialog">
+		<div>
+			<a href="#close" title="Закрыть" class="close">X</a>
+			<img src="img/acc-pic.jpg"></img>
+			<h2>My Account</h2>
+			<p>Sign-in or <a href="#">Register</a></p>
+			<input type="text" id="username"  placeholder="Email or Username" /><br>
+			<input type="password" id="username"  placeholder="Password" />
+			<input id="sign-btn" type="button" value="Sign-in"></input>
+		</div>
 
+	</div>
+	
 	<img id="main-logo" alt="main-logo" src="img/main-logo.png"></img>
 	
 	<div id="main-menu">

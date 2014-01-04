@@ -731,11 +731,89 @@ footer{
 
 
 
+/*modal dialog*/
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+	
+	img{
+		margin-top: 30px;
+	}
+	
+	h2{
+		display: inline;
+	}
+	
+	a{
+		font-family: 'Calibri';
+		font-weight: bold;
+		color: #ddd;
+		text-decoration: none;
+	}
+	
+	input{
+		width: 80%;
+		height: 20px;
+		margin-bottom: 9px;
+		border-radius: 5px;
+	}
+	
+	#sign-btn{
+		height: 30px;
+		color: #fff;
+		font-family: 'Calibri';
+		font-weight: bold;
+		font-size: 1em;
+		box-shadow: 2px 2px 2px black;
+		background-color: rgba(1,111,1,.5);
+	}
+}
 
 
+.modalDialog:target {
+	display: block;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: rgba(110,156,92,1);
+	
+}
 
 
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	
+	border-radius: 12px;
 
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background-color: rgba(1,111,1,.5); }
 
 
 
