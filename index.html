@@ -189,8 +189,8 @@
 		<div id="sort-buttons">
 			<ul>
 				<li>Filter by: </li>
-				<li><input type="radio" id="most-recent" name="sort">Most Recent</input></li>
-				<li><input type="radio" id="highest-amount" name="sort">Highest Amount</input></li>
+				<li><input type="radio" id="ascending" name="sort">Most Recent</input></li>
+				<li><input type="radio" id="descending" name="sort">Highest Amount</input></li>
 				<li><input type="radio" id="most-popular" name="sort">Most Popular</input></li>
 				<li><input type="radio" id="most-commented" name="sort">Most Commented</input></li>
 			</ul>
@@ -198,7 +198,7 @@
 		
 		
 		<div id="scum-report-list">
-			<ul>
+			<ul class="sortable">
 				<li>
 					<div id="pic"> <img alt="res-1" src="img/res-1.png"></img></div>
 					<div id="description"> 
@@ -218,7 +218,7 @@
 								<b>Country: </b> NO<br>
 								<b>State: </b> NO<br>
 								<b>Added: </b> Jan 04, 2014<br>
-								<b>Report ID#: </b> 4057<br>
+								<b>Report ID#: </b><span id="report-id"> 4057</span><br>
 							</div>
 							<div class="view">
 								<a href="http://www.scamguard.com/categories/online-auction-complaints/hotcloseouts2013com/4057/not-returning-my-emails-and-not-receiving-items/">View</a>
@@ -248,7 +248,7 @@
 								<b>Country: </b>USA<br>
 								<b>State: </b> UN<br>
 								<b>Added: </b> Jan 04, 2014<br>
-								<b>Report ID#: </b> 4056<br>
+								<b>Report ID#: </b> <span id="report-id">4056</span><br>
 							</div>
 							<div class="view">
 								<a href="http://www.scamguard.com/categories/online-scam/jobnpaycom/4056/jobnpaycom-and-mystandardjobcom-a-big-time-wasteage/">View</a>
@@ -280,7 +280,7 @@
 								<b>Country: </b>USA<br>
 								<b>State: </b> CA<br>
 								<b>Added: </b> Jan 04, 2014<br>
-								<b>Report ID#: </b> 4055<br>
+								<b>Report ID#: </b> <span id="report-id">4055</span><br>
 							</div>
 							<div class="view">
 								<a href="http://www.scamguard.com/categories/retail-store-scams-complaints/selectbestpricecom/4055/order-shoes-and-have-not-receive-them-yet/">View</a>
@@ -313,7 +313,7 @@
 								<b>Country: </b>USA<br>
 								<b>State: </b> UN<br>
 								<b>Added: </b> Jan 04, 2014<br>
-								<b>Report ID#: </b> 4054<br>
+								<b>Report ID#: </b><span id="report-id">4054</span><br>
 							</div>
 							<div class="view">
 								<a href="http://www.scamguard.com/categories/online-scam/dollar4referralcom/4054/no-payment-after-payment-approved/">View</a>
@@ -387,39 +387,7 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
