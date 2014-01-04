@@ -382,6 +382,125 @@ body{
 
 
 
+/* scum-report-list*/
+
+#scum-report-list{
+	width: 100%;
+	
+	margin: 0;
+	padding: 0;
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	
+		li{
+			margin: 5px 0;
+			width: 100%;
+			height: 189px;
+			border-top: 1.5px dashed grey;
+			border-bottom: 1.5px dashed grey;
+			
+			#pic{
+				float: left;
+				width: 20%;
+				
+				
+				img{
+					margin: 25px 30px;
+					border: 1px solid grey;
+				}
+			}
+			
+			#description{
+				float: left;
+				
+				padding-top: 20px;
+				margin-right: 5px;
+				width: 59%;
+				
+				a{
+				
+					color: rgba(100,100,255,.8);
+					font-family: 'Calibri';
+					font-weight: bold;
+					text-decoration: none;
+					&:hover{color: #111;}
+				}
+				
+				#am-un{
+					border-top: 1px dotted grey;
+					padding-top: 5px;
+					
+					.amount{
+						background: url("../img/amount.png");
+						background-position: center left;
+						background-repeat: no-repeat;
+						font-family: 'Calibri';
+						padding-left: 20px;
+					}
+					
+					.unresolved{
+						background: url("../img/flag.png");
+						background-position: center left;
+						background-repeat: no-repeat;
+						color: #96362b;
+						font-family: 'Calibri';
+						font-weight: bold;
+						margin-left: 30px;
+						padding-left: 20px;
+					}
+					
+				}
+				
+				
+			}
+			
+			#info{
+				background: rgba(0,0,0,.2);
+				font-family: 'Calibri';
+				font-size: .9em;
+				float: left;
+				height: 189px;
+				line-height: 2em;
+				width: 20%;
+				.info-text{
+					margin-left: 5px;
+					margin-top: 10px;
+				}
+				
+				.view{
+					margin-top: 20px;
+					text-align: center;
+					a{
+						background: #6374b2;
+						border-radius: 5px;
+						border-top: 2px solid rgba(255,255,255,.8);
+						border-left: 2px solid rgba(255,255,255,.8);
+						box-shadow: 4px 4px 2px rgba(0,0,0,.4);
+						color: #ddd;
+						font-family: Impact;
+						font-size: 1.2em;
+						padding: 10px 20px;
+						text-decoration: none;
+						
+					}	
+				}
+				
+			}
+			
+			
+		}
+	
+	
+	}
+
+}
+
+
+
+
+
 /* aside content */
 
 #aside-content{
